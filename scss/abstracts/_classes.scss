@@ -1,0 +1,146 @@
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Default for margin: 0 */
+.flow-content--top > * + * {
+  margin-top: var(--spacer--rem);
+}
+
+.flow-content--bottom > * {
+  margin-bottom: var(--spacer--em);
+}
+
+.flow-content--bottom > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Flex: even-columns with media */
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split > * + * {
+  margin: var(--spacer--rem) 0 0 0;
+  // margin: calc(var(--spacer--rem) * var(--multiplicator-4)) 0 0 0;
+}
+
+/* Flex: grid-ish without media */
+.grid-ish {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: var(--spacer--rem);
+}
+
+.grid-ish > * {
+  flex: 1 1 280px;
+}
+
+/* grid-ish: optional */
+.grid-ish > * > p {
+  max-width: 65ch;
+}
+
+/* Real Grid - like container */
+.site-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 850px) minmax(1em, 1fr);
+    grid-gap: var(--spacer--rem);
+}
+
+.site-grid > * {
+  grid-column: 2 / -2;
+}
+
+/* Cards, Posts... Grid */
+.tile-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: calc(var(--spacer--rem) * var(--multiplicator-2));
+}
+
+
+/* Media */
+@media (min-width: 40em) {
+  /* Flex: even-columns media-part */
+  .split {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin: 0 0 0 1rem;
+  }
+
+  /* even-columns: optional col-system */
+  .col-1 {
+    flex-basis: 25%;
+  }
+
+  .col-2 {
+    flex-basis: 50%;
+  }
+
+  .col-3 {
+    flex-basis: 75%;
+  }
+}
+
+/* Classes for color layout */
+[class*='bg-'] {
+  color: var(--fg, var(--clr-neutral-900));
+  background: var(--bg, var(--clr-neutral-100));
+}
+
+.bg-dark-accent {
+  --clr-accent: var(--accent);
+
+  --fg: var(--clr-secondary-400);
+  --bg: var(--clr-neutral-900);
+}
+
+.bg-primary-300 {
+  --bg: var(--clr-primary-300);
+}
+
+.bg-primary-400 {
+  --bg: var(--clr-primary-400);
+}
+
+.bg-light {
+  --clr-accent: var(--accent);
+
+  color: var(--clr-secondary-400);
+  background-color: var(--clr-secondary-300);
+}
+
+.bg-dark {
+  color: var(--clr-secondary-300);
+  background-color: var(--clr-secondary-400);
+}
+
+/* More classes */
+.responsive-img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 200px; /* look at the image self */
+}
+
+.clr-accent {
+  color: var(--clr-accent);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}

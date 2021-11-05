@@ -1,0 +1,14 @@
+.btn {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 1em 2.75em;
+  color: var(--fg, inherit);
+  background-color: var(--bg, #59e89c);
+}
+.btn:hover,
+.btn:focus {
+  opacity: 0.7;
+}
