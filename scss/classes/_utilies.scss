@@ -1,0 +1,19 @@
+
+/* More classes */
+.responsive-img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 200px; /* look at the image self */
+}
+
+.clr-accent {
+  color: var(--clr-accent-400);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}

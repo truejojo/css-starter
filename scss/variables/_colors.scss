@@ -1,0 +1,165 @@
+:root {
+  --clr-neutral-100: #fff;
+  --clr-neutral-200: #ededed;
+  --clr-neutral-300: #c0c0c0;
+  --clr-neutral-400: #a0a0a0;
+  --clr-neutral-500: #808080;
+  --clr-neutral-600: #585858;
+  --clr-neutral-700: #383838;
+  --clr-neutral-800: #202020;
+  --clr-neutral-900: #080808;
+
+  --primary-huge: 207;
+  --secondary-huge: 27;
+  --accent-huge: 87; //267
+
+  --saturation: 44%;
+
+  --lighting-100: 99%;
+  --lighting-200: 89%;
+  --lighting-300: 79%;
+  --lighting-400: 69%;
+  --lighting-500: 59%;
+  --lighting-600: 49%;
+  --lighting-700: 39%;
+  --lighting-800: 29%;
+  --lighting-900: 19%;
+
+  --clr-primary-100: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-100)
+  );
+  --clr-primary-200: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-200)
+  );
+  --clr-primary-300: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-300)
+  );
+  --clr-primary-400: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-400)
+  );
+  --clr-primary-500: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-500)
+  );
+  --clr-primary-600: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-600)
+  );
+  --clr-primary-700: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-700)
+  );
+  --clr-primary-800: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-800)
+  );
+  --clr-primary-900: hsl(
+    var(--primary-huge),
+    var(--saturation),
+    var(--lighting-900)
+  );
+
+  --clr-secondary-100: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-100)
+  );
+  --clr-secondary-200: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-200)
+  );
+  --clr-secondary-300: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-300)
+  );
+  --clr-secondary-400: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-400)
+  );
+  --clr-secondary-500: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-500)
+  );
+  --clr-secondary-600: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-600)
+  );
+  --clr-secondary-700: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-700)
+  );
+  --clr-secondary-800: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-800)
+  );
+  --clr-secondary-900: hsl(
+    var(--secondary-huge),
+    var(--saturation),
+    var(--lighting-900)
+  );
+
+  --clr-accent-100: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-100)
+  );
+  --clr-accent-200: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-200)
+  );
+  --clr-accent-300: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-300)
+  );
+  --clr-accent-400: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-400)
+  );
+  --clr-accent-500: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-500)
+  );
+  --clr-accent-600: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-600)
+  );
+  --clr-accent-700: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-700)
+  );
+  --clr-accent-800: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-800)
+  );
+  --clr-accent-900: hsl(
+    var(--accent-huge),
+    var(--saturation),
+    var(--lighting-900)
+  );
+}
